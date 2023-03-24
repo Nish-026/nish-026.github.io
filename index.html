@@ -1,36 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
+    <!-- fontawesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+        integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/12a8246a20.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav id="nav-menu">
-        <div><a class="navbar-brand" href="#">Nishtha</a></div>
-      
-        <div>
-          <ul>
-            <li>
-              <a id="home">Home</a>
-            </li>
-            <li>
-              <a id="about">About</a>
-            </li>
-            <li id="skills">
-              <a >Skills</a>
-            </li>
-            <li id="projects">
-                <a>Projects</a>
-            </li>
-            <li id="contact">
-                <a>Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header id="header">
+        <div id="logo_div"><h2 id="logo">NISHTHA</h2></div>
+        <nav id="nav-menu" class="Container">
+            <div class="links">
+
+                <ul>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span>
+                            <a href="#home" class="nav-link home">Home</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-user-large"></i>
+                        </span>
+                        <span>
+                            <a href="#about" class="nav-link about">About</a>
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <span>
+                            <a href="#skills" class="nav-link skills">Skills</a>
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-list-check"></i>
+                        </span>
+                        <span>
+                            <a href="#projects" class="nav-link projects">Projects</a>
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-regular fa-address-card"></i>
+                        </span>
+                        <span>
+                            <a href="#contact" class="nav-link contact">Contact</a>
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-file"></i>
+                        </span>
+                        <span>
+                            <a id="resume-link-2" target="_blank" href="#" download class="nav-link resume">Resume</a>
+                        </span>
+
+                    </li>
+
+                    <i class="fa-regular fa-moon" transition="none" font-size="32px"></i>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero-area">
+            <div class="container">
+                <div class="hero-info">
+                    <h3 class="sub-heading">Full-Stack Web Developer</h3>
+                    <h1 class="heading" id="user-detail-name">NISHTHA</h1>
+                    <p class="text">Aspiring Software development professional, adept at engineering robust
+                        and user-centric solutions. Collaborative team player proficient in
+                        working with interdisciplinary teams and executing goal oriented projects.
+                        Aims to leverage knowledge and build world-class web applications
+                        while facilitating organization in achieving functional goals.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/14_09_2021_17_04_19_cd392d2388954be442d2dc6cb52a7807_i.jpg" class="person" alt="err">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact section">
+
+            <div class="container">
+                <div class="contact-info">
+                    <h3 class="sub-heading">Contact Me</h3>
+                    <h1 class="heading">Let's Work Together</h1>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quos nostrum, labore
+                        debitis asperiores vel voluptate ab nisi! In, cumque.</p>
+
+                    <a href="" class="mail" target="blank">📧 Email Me at :
+                        <span id="contact-email"></span> <i class="uil uil-arrow-right"></i></a>
+
+                    <h3 class="link-title">I am also available on ></h3>
+
+                    <div class="socialaccount-media">
+                        <div class="gitlinkedin">
+                            <a href="" target="_blank" id="contact-linkedin" class="socialaccount-link"><i class="uil uil-linkedin"></i></a>
+                            <p class="gitl">LinkedIn</p>
+                        </div>
+                        <div class="gitlinkedin">
+                            <a href="" target="_blank" id="contact-github"
+                            class="socialaccount-link"><i class="uil uil-github"></i></a>
+                            <p class="gitl">GitHub</p>
+                        </div>
+                    </div>
+
+                </div>
+                <form action="index.html" class="contact-form">
+                    <h3>Send me a message</h3>
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                    <input type="email" class="form-input" placeholder="Your Email" required>
+                    <textarea placeholder="Message Details ..." class="form-input" required></textarea>
+                    <input type="submit" value="Send" class="btn">
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="container">
+                <a href="#" class="logo">Nishtha</a>
+                <p class="text">&copy 2023 Built By Nishtha. | Contact : <span id="contact-phone" >+91 8800606493 </span> </p>
+                <ul class="social-media">
+                    <li>
+                        <a href="#" class="social-link"><i class="uil uil-linkedin"></i></a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" class="social-link"> <i class="uil uil-github"></i></a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>
