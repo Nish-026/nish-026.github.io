@@ -13,3 +13,10 @@ function myTheme(){
 
       }
 }
+
+var typed = new Typed(".auto-type", {
+  strings: ["Full Stack Web Developer", "Node.js Backend Developer"],
+  typeSpeed: 75,
+  backSpeed: 75,
+  loop: true,
+});
