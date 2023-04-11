@@ -453,7 +453,7 @@ input:checked+label svg.moon {
 
 /* -------------------------------------- Skills --------------------------------- */
 
-#skills-container_main{
+#skills{
   width:80%;
   text-align: center;
   margin: auto;
