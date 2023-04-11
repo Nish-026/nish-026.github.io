@@ -497,3 +497,24 @@ input:checked+label svg.moon {
 #cyclic_div>div:nth-child(2){
   margin-top:26px;
 }
+
+/* ------------------------------------------ Github ------------------------------------------ */
+
+.react-activity-calendar{
+  text-align: center;
+  margin-top: 70px;
+}
+#git-stat{
+  width: 40%;
+  margin:auto;
+
+}
+#git-stat div{
+  width: 100%;
+  margin: auto;
+  border: 1px solid red;
+}
+.calendar{
+  width: 80%;
+  margin:auto;
+}

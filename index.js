@@ -20,3 +20,9 @@ var typed = new Typed(".auto-type", {
   backSpeed: 75,
   loop: true,
 });
+
+
+GitHubCalendar(".calendar", "nish-026");
+
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "nish-026", { responsive: true });
