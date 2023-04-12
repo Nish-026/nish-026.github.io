@@ -16,6 +16,7 @@
     <!--------------- Git Calender----------------->
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script src="https://kit.fontawesome.com/12a8246a20.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
 </head>
 
 <body>
@@ -144,7 +145,8 @@
                     <h2 class="heading" id="user-detail-name">Hi, I am Nishtha👋</h2>
                     <h3 class="home_subtitle"><span class="auto-type"></span></h3>
                     <p id="intro_text">Motivated software developer specializing in Node.js backend development.
-                        With a passion for clean, efficient code and a focus on delivering results, I'm dedicated to creating
+                        With a passion for clean, efficient code and a focus on delivering results, I'm dedicated to
+                        creating
                         robust and scalable applications that meet the needs of clients and users alike.</p>
                     <div id="intro_connect_btn">
                         <a href="#contact">Connect with Me <img style="width: 40px" src="./images/download.png"></a>
@@ -354,38 +356,58 @@
 
         <section id="contact" class="contact section">
             <h3 class="sub-heading">Contact Me</h3>
-            <div class="container">
+            <div id="contact_container">
                 <div class="contact-info">
-                    <h4 class="heading">Let's Work Together</h4>
+                    <h4 class="heading" style="color:rgb(131, 3, 131);">Let's Work Together ✨</h4>
 
                     <a href="nishtha.kashyap2608@gmail.com" class="mail" target="blank">📧 Email Me at :
-                        <span id="contact-email">nishtha.kashyap2608@gmail.com</span> <i
-                            class="uil uil-arrow-right"></i></a>
+                        <span id="contact-email">nishtha.kashyap2608@gmail.com</span></a>
 
-                    <h3 class="link-title">I am also available on ></h3>
+                    <h5 class="link-title">I am also available on :</h5>
 
                     <div class="socialaccount-media">
                         <div class="gitlinkedin">
-                            <a href="https://www.linkedin.com/in/kanadeaditya/" target="_blank" id="contact-linkedin"
-                                class="socialaccount-link"><i class="uil uil-linkedin"></i></a>
-                            <p class="gitl">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/nishthakashyap26" target="_blank" id="contact-linkedin"
+                                class="socialaccount-link"><svg width="30px" height="30px" viewBox="0 0 192 192"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <rect width="132" height="132" x="30" y="30" stroke="#000000" stroke-width="12"
+                                        rx="16" />
+                                    <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="12" d="M66 86v44" />
+                                    <circle cx="66" cy="64" r="8" fill="#000000" />
+                                    <path stroke="#000000" stroke-linecap="round" stroke-width="12"
+                                        d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26" />
+                                </svg></a>
+                            <p class="contact_link">LinkedIn</p>
                         </div>
                         <div class="gitlinkedin">
-                            <a href="https://github.com/KanadeAditya" target="_blank" id="contact-github"
-                                class="socialaccount-link"><i class="uil uil-github"></i></a>
-                            <p class="gitl">GitHub</p>
+                            <a href="https://github.com/Nish-026" target="_blank" id="contact-github"
+                                class="socialaccount-link"> <svg width="30px" height="30px" viewBox="0 0 192 192"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="12"
+                                        d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
+                                </svg></a></a>
+                            <p class="contact_link">GitHub</p>
                         </div>
                     </div>
 
                 </div>
-                <form action="index.html" class="contact-form">
-                    <h3>Send me a message</h3>
-                    <input type="text" class="form-input" placeholder="Your Name" required>
-                    <input type="email" class="form-input" placeholder="Your Email" required>
-                    <textarea placeholder="Message Details ..." class="form-input" required></textarea>
-                    <input type="submit" value="Send" class="btn">
-                </form>
+                <div id="location">
+                    <h4>Based in<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                         width="20px" height="20px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                   <path fill="purple" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24
+                       C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24
+                       C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"/>
+                   </svg></h4>
+                    <h6>Delhi,India</h6>
+                    <h4>Phone</h4>
+                    <h6>+91-8800606493</h6>
+                </div>
             </div>
+
+        </section>
+        <section id="footer">
 
         </section>
 
