@@ -365,7 +365,7 @@ input:checked+label svg.moon {
 /* ------------------------------------------ ABOUT ------------------------------------------ */
 
 #about{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 80%;
   margin: auto;
   margin-top: 50px;
@@ -383,15 +383,19 @@ input:checked+label svg.moon {
 .about_container{
   display: flex;
   margin-top: 20px;
-  bordeR: 1px solid green;
+  /* bordeR: 1px solid green; */
   justify-content: space-evenly;
 }
 .about_container>div{
   width:40%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .about_container>div:nth-child(1){
   width: 50%;
+  padding: 20px;
+  background-color: rgb(251, 236, 162);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .about_container img{
   width: 100%;
@@ -400,9 +404,9 @@ input:checked+label svg.moon {
 
 
 .about_info {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
-  width: 90%;
+  width: 100%;
   margin: auto;
   grid-template-columns: repeat(3, 25%);
   grid-column-gap: 30px;
@@ -426,7 +430,7 @@ input:checked+label svg.moon {
 }
 
 .about_info-title {
-  font-size: var(--h2-font-size);
+  font-size: 18px;
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
@@ -445,10 +449,31 @@ input:checked+label svg.moon {
   margin-top: 30px;
 }
 #resume-button-2{
-
+  text-decoration: none;
+  color:#542d09
 }
-
-
+#about_button{
+  border: 1px solid rgb(172, 94, 11);
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #96f9c6;
+  padding: 7px;
+  border-radius: 8px;
+  
+}
+#download{
+  fill: white;
+  margin-bottom:-8px;
+  margin-left: 4px;
+}
+#about_button:hover{
+  background-color:#7df6ec;
+}
+#download:hover{
+  margin-left: 8px;
+  transition: 0.2s;
+}
 
 
 /* -------------------------------------- Skills --------------------------------- */
@@ -513,6 +538,10 @@ input:checked+label svg.moon {
   width: 100%;
   margin: auto;
   border: 1px solid red;
+}
+#calendar_div{
+  background-color: rgb(42, 178, 178);
+  
 }
 .calendar{
   width: 80%;
