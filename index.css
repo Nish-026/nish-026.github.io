@@ -314,7 +314,7 @@ input:checked+label svg.moon {
 
 .intro_container {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid rgb(198, 110, 242); */
   justify-content: space-evenly;
 }
 
@@ -537,7 +537,7 @@ input:checked+label svg.moon {
 #git-stat div{
   width: 100%;
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #calendar_div{
   background-color: rgb(42, 178, 178);
@@ -554,8 +554,8 @@ input:checked+label svg.moon {
   width: 80%;
   margin: auto;
   text-align: center;
-  margin-top: 50px;
-  border: 1px solid red;
+  margin-top: 100px;
+  /* border: 1px solid red; */
 }
 
 #contact_container{
@@ -566,7 +566,7 @@ input:checked+label svg.moon {
   margin: auto;
 }
 #contact_container>div{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin:auto;
   margin-top: 30px;
 }
@@ -634,8 +634,18 @@ input:checked+label svg.moon {
   color: rgb(71, 71, 71);
 }
 
-
-
+#location{
+  /* border: 1px solid red; */
+  width: 30%;
+}
+#location_h{
+  margin-top: 10%;
+}
+.location_content{
+  font-weight: 100px;
+  color:#756e6e;
+  font-size: 14px;
+}
 
 /* -------------------------------------------------- Footer -------------------------------------------------------------- */
 
