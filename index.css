@@ -5,10 +5,6 @@
 
 
 
-
-
-
-
   /* Font-size */
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
@@ -32,6 +28,9 @@
 
 }
 
+/* body{
+  background-color: #3a3a3a;
+} */
 
 
 
@@ -47,8 +46,9 @@
   width: 100%;
   z-index: 10;
   transition: 0.3s;
-  /* border: 1px solid black; */
-  background-color: white;
+  /* /* border: 1px solid black; */
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgba(0, 0, 0, 0.246); */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -78,7 +78,7 @@ nav {
 
 #logo {
   margin-bottom: -6px;
-  color: rgb(88, 87, 87);
+  color: rgb(86, 86, 86);
   
 }
 
@@ -246,9 +246,8 @@ input:checked+label svg.moon {
   height: 30rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   z-index: 6;
-  /* margin-top: 100px; */
+  margin-top: 20px;
 }
 #left_static_bar svg {
   transition-duration: 0.5s;
@@ -303,8 +302,9 @@ input:checked+label svg.moon {
   height: 27rem;
   display: flex;
   flex-direction: column;
+  z-index: 6;
   /* border: 1px solid rgb(0, 0, 0); */
-  /* margin-top: 50px; */
+  margin-top: 20px;
 }
 #right_static_bar h5,
 #right_static_bar span {
@@ -326,15 +326,8 @@ input:checked+label svg.moon {
 /* ------------------------------------------- Introduction -------------------------------------------- */
 
 
-.intro_container {
-  display: flex;
-  /* border: 1px solid rgb(198, 110, 242); */
-  justify-content: space-evenly;
-}
-
 .intro_container>div {
-  
-  width: 40%;
+  width: 45%;
 }
 
 #intro_text {
@@ -343,12 +336,12 @@ input:checked+label svg.moon {
 }
 
 #user-detail-name {
-  color: rgb(40, 40, 40);
+  color: rgb(255, 253, 253);
 }
 
 .home_subtitle {
   font-size: 20px;
-  color: rgb(131, 3, 131);
+  color: rgb(139, 4, 139);
   font-weight: 500;
   margin-bottom: var(--mb-1)
 }
@@ -357,33 +350,71 @@ input:checked+label svg.moon {
   border: 2px solid rgb(131, 3, 131);
   border-radius: 5px;
   width: 200px;
+  background-color:rgb(43, 160, 151);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #intro_connect_btn:hover{
-  border: 3px solid rgb(209, 44, 209);
-  border-radius: 5px;
-  margin-left: 4px;
+  border: 2px solid rgb(209, 44, 209);
   transition-duration: 0.2s;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
 
 }
 
 #intro_connect_btn>a {
   text-decoration: none;
   font-size: var(--h3-font-size);
-  color:rgb(40, 40, 40);
+  color:rgb(255, 255, 255);
   margin-left: 5px;
 }
 
-
-
+.bg_image {
+  
+  width: 100%;
+  height: 550px;
+  position: relative;
+  padding-bottom: 46.25%;
+}
+#myVideo{
+  margin-top:-90px;
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  object-fit: cover;
+}
+.intro_container{
+  color:white;
+  width: 80%;
+  margin:auto;
+  padding: 2rem;
+  position: absolute;
+  top: 140px;
+  left: 12%;
+  border-radius: 3px;
+  /* margin-top: -40px; */
+  display: flex;
+  /* border: 1px solid rgb(242, 110, 110); */
+  justify-content: space-evenly;
+}
+#home_img{
+  border:1px solid green;
+  width: 300px;
+  height:300px;
+  border-radius: 20px;
+  /* margin-top:5%; */
+}
+.home-img>img{
+  width:100%;
+  border-radius: 20px;
+}
 
 /* ------------------------------------------ ABOUT ------------------------------------------ */
 
 #about{
-  /* border: 1px solid green; */
   width: 90%;
   margin: auto;
-  margin-top: 70px;
   margin-left:8%;
+  margin-top:-60px;
 }
 .section_title{
   text-align: center;
@@ -408,7 +439,7 @@ input:checked+label svg.moon {
 .about_container>div:nth-child(1){
   width: 50%;
   padding: 20px;
-  background-color: rgb(251, 236, 162);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -539,6 +570,176 @@ input:checked+label svg.moon {
   margin-top:26px;
 }
 
+/* ---------------------------------------------- Projects ------------------------------------------------ */
+
+#projects {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+#projects h2 {
+  border: 1px solid rgb(82, 82, 82);
+  padding: 10px;
+  width: 42%;
+  margin: auto;
+  text-align: center;
+}
+
+#projects h2:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#project-div {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.project-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid rgb(135, 135, 135);
+}
+
+.project-card-img img {
+  width: 90%;
+}
+
+.project-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-title,
+.project-description,
+.project-tech-stack,
+.project-card-links {
+  margin: 5px;
+}
+
+.project-github-link > i,
+.project-deployed-link > i {
+  font-size: x-large;
+  margin: 0px 5px;
+}
+
+.project-github-link > i:hover,
+.project-deployed-link > i:hover {
+  color:rgb(70, 194, 239);
+}
+
+.project-tech-stack > img {
+  width:4%;
+}
+
+.project-description{
+  font-weight: 600;
+}
+
+/* For smartphones */
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  /* CSS styles for smartphones */
+  #projects {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  
+  #projects h2 {
+    border: 1px solid rgb(82, 82, 82);
+    padding: 5px;
+    width: 42%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #projects h2:hover {
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
+  #project-div {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .project-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgb(135, 135, 135);
+  }
+  
+  .project-card-img img {
+    width: 90%;
+  }
+  
+  .project-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-title,
+  .project-description,
+  .project-tech-stack,
+  .project-card-links {
+    margin: 5px;
+  }
+  
+  .project-github-link > i,
+  .project-deployed-link > i {
+    font-size: large;
+    margin: 0px 5px;
+  }
+  
+  .project-github-link > i:hover,
+  .project-deployed-link > i:hover {
+    color:rgb(70, 194, 239);
+  }
+  
+  .project-tech-stack > img {
+    width:5%;
+  }
+  
+  .project-description{
+    display: none;
+  }
+}
+
+/* For small tablets */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* CSS styles for small tablets */
+  
+ }
+
+/* For larger tablets and smaller laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* CSS styles for larger tablets and smaller laptops */
+}
+
+/* For desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* CSS styles for desktop screens */
+}
+
+/* For large screens */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* CSS styles for large screens */
+}
 /* ------------------------------------------ Github ------------------------------------------ */
 
 .react-activity-calendar{
