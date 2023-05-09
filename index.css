@@ -58,7 +58,8 @@ nav {
   /* border: 1px solid red; */
   width: 65%;
 }
-.links{
+
+.links {
   color: rgb(29, 89, 103);
   /* text-shadow: 0 0 1px #000; */
 }
@@ -79,7 +80,7 @@ nav {
 #logo {
   margin-bottom: -6px;
   color: rgb(86, 86, 86);
-  
+
 }
 
 #N {
@@ -95,11 +96,11 @@ ul {
 
 .fa-solid {
   width: 35px;
-  margin-top:12px;
+  margin-top: 12px;
   font-size: 0.85em;
   -webkit-text-fill-color: rgb(49, 186, 175);
--webkit-text-stroke-width: 0.7px;
--webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: black;
   /* border: 1px solid red; */
 }
 
@@ -135,10 +136,6 @@ nav a {
 
 .fa-moon {
   font-size: 30px;
-}
-
-#home {
-  margin-top: 150px;
 }
 
 .container {
@@ -238,6 +235,13 @@ input:checked+label svg.moon {
   margin-right: 40px;
   margin-top: -9px;
 }
+
+#resume-button-1{
+  color:white;
+  background-color: white;
+  border:none;
+}
+
 /* ---------------------------- left-static -----------------------  */
 #left_static_bar {
   width: 2%;
@@ -247,17 +251,20 @@ input:checked+label svg.moon {
   display: flex;
   flex-direction: column;
   z-index: 6;
-  margin-top: 20px;
+  margin-top: 100px;
 }
+
 #left_static_bar svg {
   transition-duration: 0.5s;
 }
+
 #left_static_bar svg:hover {
   fill: rgb(198, 8, 198);
   transition-duration: 0.5s;
-  margin-left:3px;
-  margin-top:3px;
+  margin-left: 3px;
+  margin-top: 3px;
 }
+
 #left_static_bar h5 {
   writing-mode: vertical-rl;
   color: rgb(131, 3, 131);
@@ -277,14 +284,17 @@ input:checked+label svg.moon {
     justify-content: space-evenly;
     z-index: 6;
   }
+
   #left_static_bar i {
     color: rgb(255, 255, 255);
     font-size: small;
     transition-duration: 0.5s;
   }
+
   #left_static_bar i:hover {
     font-size: medium;
   }
+
   #left_static_bar h5 {
     writing-mode: vertical-rl;
     color: rgb(131, 3, 131);
@@ -304,19 +314,22 @@ input:checked+label svg.moon {
   flex-direction: column;
   z-index: 6;
   /* border: 1px solid rgb(0, 0, 0); */
-  margin-top: 20px;
+  margin-top: 100px;
 }
+
 #right_static_bar h5,
 #right_static_bar span {
   writing-mode: vertical-rl;
   color: rgb(131, 3, 131);
-  cursor:pointer;
+  cursor: pointer;
 }
+
 #right_static_bar span {
   letter-spacing: 2px;
   font-size: 16px;
   transition-duration: 0.5s;
 }
+
 #right_static_bar span:hover {
   color: rgb(20, 109, 160);
   padding: 5px;
@@ -350,11 +363,12 @@ input:checked+label svg.moon {
   border: 2px solid rgb(131, 3, 131);
   border-radius: 5px;
   width: 200px;
-  background-color:rgb(43, 160, 151);
+  background-color: rgb(43, 160, 151);
   padding-left: 5px;
   padding-right: 5px;
 }
-#intro_connect_btn:hover{
+
+#intro_connect_btn:hover {
   border: 2px solid rgb(209, 44, 209);
   transition-duration: 0.2s;
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
@@ -364,86 +378,104 @@ input:checked+label svg.moon {
 #intro_connect_btn>a {
   text-decoration: none;
   font-size: var(--h3-font-size);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-left: 5px;
 }
 
-.bg_image {
-  
-  width: 100%;
+#home {
+  margin-top: 60px;
+  border: 1px solid rgb(255, 255, 255);
   height: 550px;
-  position: relative;
-  padding-bottom: 46.25%;
+  background: linear-gradient(62deg, #fc8cfc, #23D5AB, #e15ebc, #3ce7a5);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
 }
-#myVideo{
-  margin-top:-90px;
-  width: 100%;
-  height: 550px;
-  position: absolute;
-  object-fit: cover;
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.intro_container{
-  color:white;
+
+.intro_container {
+  color: white;
   width: 80%;
-  margin:auto;
+  margin: auto;
   padding: 2rem;
-  position: absolute;
+  /* position: absolute; */
   top: 140px;
   left: 12%;
   border-radius: 3px;
-  /* margin-top: -40px; */
+  margin-top: 90px;
   display: flex;
   /* border: 1px solid rgb(242, 110, 110); */
   justify-content: space-evenly;
 }
-#home_img{
-  border:1px solid green;
+
+#home_img {
+  border: 1px solid green;
   width: 300px;
-  height:300px;
+  height: 300px;
   border-radius: 20px;
   /* margin-top:5%; */
 }
-.home-img{
-  width:100%;
+
+.home-img {
+  width: 100%;
   border-radius: 20px;
 }
 
 /* ------------------------------------------ ABOUT ------------------------------------------ */
 
-#about{
+#about {
   width: 90%;
   margin: auto;
-  margin-left:8%;
-  margin-top:-60px;
+  margin-left: 8%;
+  margin-top: 60px;
 }
-.section_title{
+
+.section_title {
   text-align: center;
-  color:#3a3a3a
+  color: #3a3a3a
 }
-.section_title:hover{
-  color:#3a3a3a;
+
+.section_title:hover {
+  color: #3a3a3a;
 }
-#user-detail-intro{
+
+#user-detail-intro {
   text-align: justify;
 }
-.about_container{
+
+.about_container {
   display: flex;
   margin-top: 20px;
   /* bordeR: 1px solid green; */
   justify-content: space-evenly;
 }
-.about_container>div{
-  width:40%;
+
+.about_container>div {
+  width: 40%;
   /* border: 1px solid black; */
 }
-.about_container>div:nth-child(1){
+
+.about_container>div:nth-child(1) {
   width: 50%;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.about_container img{
+
+.about_container img {
   width: 100%;
   text-align: center;
 }
@@ -463,11 +495,12 @@ input:checked+label svg.moon {
   border: 1.5px solid rgb(131, 3, 131);
   border-radius: 5px;
 }
+
 .about_info>div:hover {
   transition: 0.4s;
   border: 1.8px solid rgb(212, 3, 253);
   margin-left: 3px;
-  margin-top:2px;
+  margin-top: 2px;
 }
 
 
@@ -491,14 +524,16 @@ input:checked+label svg.moon {
   text-align: center;
 }
 
-#about_button{
+#about_button {
   margin-top: 30px;
 }
-#resume-button-2{
+
+#resume-button-2 {
   text-decoration: none;
-  color:#542d09
+  color: #542d09
 }
-#about_button{
+
+#about_button {
   border: 1px solid rgb(172, 94, 11);
   width: 200px;
   margin: auto;
@@ -506,17 +541,20 @@ input:checked+label svg.moon {
   background-color: #96f9c6;
   padding: 7px;
   border-radius: 8px;
-  
+
 }
-#download{
+
+#download {
   fill: white;
-  margin-bottom:-8px;
+  margin-bottom: -8px;
   margin-left: 4px;
 }
-#about_button:hover{
-  background-color:#7df6ec;
+
+#about_button:hover {
+  background-color: #7df6ec;
 }
-#download:hover{
+
+#download:hover {
   margin-left: 8px;
   transition: 0.2s;
 }
@@ -524,50 +562,55 @@ input:checked+label svg.moon {
 
 /* -------------------------------------- Skills --------------------------------- */
 
-#skills{
-  width:80%;
+#skills {
+  width: 80%;
   text-align: center;
   margin: auto;
   margin-top: 70px;
   /* border:1px solid red; */
 }
 
-.skills-wrap{
+.skills-wrap {
   /* border: 1px solid red; */
   width: 60%;
-  margin:auto;
+  margin: auto;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(5, 100px);
   gap: 20px;
 }
-.skills-wrap> div{
+
+.skills-wrap>div {
   border: 1.5px solid purple;
   box-shadow: 0 0 5px #bc07e0;
   border-radius: 6px;
 }
-.skills-wrap> div:hover{
+
+.skills-wrap>div:hover {
   border: 1.5px solid rgb(107, 107, 107);
   border-radius: 6px;
   margin-top: 5px;
   margin-left: 5px;
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 0 0 10px #20a2fe;
 }
-#skills-container img{
+
+#skills-container img {
   border-radius: 6px;
   width: 100%;
 }
-.sk-title{
+
+.sk-title {
   margin-top: 8px;
 }
 
-#cyclic_div>div{
+#cyclic_div>div {
   /* bordeR: 1px solid pink; */
   margin-top: 20px;
 }
-#cyclic_div>div:nth-child(2){
-  margin-top:26px;
+
+#cyclic_div>div:nth-child(2) {
+  margin-top: 26px;
 }
 
 /* ---------------------------------------------- Projects ------------------------------------------------ */
@@ -625,33 +668,34 @@ input:checked+label svg.moon {
   margin: 5px;
 }
 
-.project-github-link > i,
-.project-deployed-link > i {
+.project-github-link>i,
+.project-deployed-link>i {
   font-size: x-large;
   margin: 0px 5px;
 }
 
-.project-github-link > i:hover,
-.project-deployed-link > i:hover {
-  color:rgb(70, 194, 239);
+.project-github-link>i:hover,
+.project-deployed-link>i:hover {
+  color: rgb(70, 194, 239);
 }
 
-.project-tech-stack > img {
-  width:4%;
+.project-tech-stack>img {
+  width: 4%;
 }
 
-.project-description{
+.project-description {
   font-weight: 600;
 }
 
 /* For smartphones */
 @media screen and (min-width: 100px) and (max-width: 480px) {
+
   /* CSS styles for smartphones */
   #projects {
     padding-top: 80px;
     padding-bottom: 100px;
   }
-  
+
   #projects h2 {
     border: 1px solid rgb(82, 82, 82);
     padding: 5px;
@@ -659,11 +703,11 @@ input:checked+label svg.moon {
     margin: auto;
     text-align: center;
   }
-  
+
   #projects h2:hover {
     border: 1px solid rgb(255, 255, 255);
   }
-  
+
   #project-div {
     width: 80%;
     height: auto;
@@ -671,7 +715,7 @@ input:checked+label svg.moon {
     flex-direction: column;
     margin: auto;
   }
-  
+
   .project-card {
     width: 100%;
     height: auto;
@@ -682,40 +726,40 @@ input:checked+label svg.moon {
     justify-content: space-evenly;
     border: 2px solid rgb(135, 135, 135);
   }
-  
+
   .project-card-img img {
     width: 90%;
   }
-  
+
   .project-card-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .project-title,
   .project-description,
   .project-tech-stack,
   .project-card-links {
     margin: 5px;
   }
-  
-  .project-github-link > i,
-  .project-deployed-link > i {
+
+  .project-github-link>i,
+  .project-deployed-link>i {
     font-size: large;
     margin: 0px 5px;
   }
-  
-  .project-github-link > i:hover,
-  .project-deployed-link > i:hover {
-    color:rgb(70, 194, 239);
+
+  .project-github-link>i:hover,
+  .project-deployed-link>i:hover {
+    color: rgb(70, 194, 239);
   }
-  
-  .project-tech-stack > img {
-    width:5%;
+
+  .project-tech-stack>img {
+    width: 5%;
   }
-  
-  .project-description{
+
+  .project-description {
     display: none;
   }
 }
@@ -723,8 +767,8 @@ input:checked+label svg.moon {
 /* For small tablets */
 @media screen and (min-width: 480px) and (max-width: 768px) {
   /* CSS styles for small tablets */
-  
- }
+
+}
 
 /* For larger tablets and smaller laptops */
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -740,34 +784,39 @@ input:checked+label svg.moon {
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   /* CSS styles for large screens */
 }
+
 /* ------------------------------------------ Github ------------------------------------------ */
 
-.react-activity-calendar{
+.react-activity-calendar {
   text-align: center;
   margin-top: 70px;
 }
-#git-stat{
+
+#git-stat {
   width: 40%;
-  margin:auto;
+  margin: auto;
 
 }
-#git-stat div{
+
+#git-stat div {
   width: 100%;
   margin: auto;
   /* border: 1px solid red; */
 }
-#calendar_div{
+
+#calendar_div {
   background-color: rgb(42, 178, 178);
-  
+
 }
-.calendar{
+
+.calendar {
   width: 80%;
-  margin:auto;
+  margin: auto;
 }
 
 /* ------------------------------------ Contact ------------------------------------------ */
 
-#contact{
+#contact {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -775,34 +824,36 @@ input:checked+label svg.moon {
   /* border: 1px solid red; */
 }
 
-#contact_container{
-  display:flex;
+#contact_container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 85%;
   margin: auto;
 }
-#contact_container>div{
+
+#contact_container>div {
   /* border: 1px solid green; */
-  margin:auto;
+  margin: auto;
   margin-top: 30px;
 }
 
-.mail{
+.mail {
   font-weight: 500;
   font-size: 1.1rem;
   transition: 0.3s margin-left;
   text-decoration: none;
 }
 
-.mail svg{
+.mail svg {
   font-size: 1.5rem;
   margin-left: 2px;
   margin-top: 10px;
   transform: translateY(3px);
   transition: 0.3s margin-left;
-  
+
 }
+
 .mail:hover {
   text-decoration: none;
   margin-left: 10px;
@@ -813,94 +864,100 @@ input:checked+label svg.moon {
 
 
 
-.socialaccount-media{
-   justify-content: space-evenly;
+.socialaccount-media {
+  justify-content: space-evenly;
   align-content: center;
   display: flex;
 }
 
-.gitlinkedin svg  {
-  fill:rgb(180, 23, 180)
+.gitlinkedin svg {
+  fill: rgb(180, 23, 180)
 }
 
- .gitlinkedin:hover svg{
-  fill:#4dd0f8;
+.gitlinkedin:hover svg {
+  fill: #4dd0f8;
   margin-left: 3px;
-  margin-top:3px;
+  margin-top: 3px;
   transition: 0.3s;
 }
 
-.socialaccount-link{
+.socialaccount-link {
   display: flex;
   align-items: center;
   justify-content: center;
- /* margin: 2px; */
+  /* margin: 2px; */
 }
 
-.contact_link{
+.contact_link {
   font-weight: 600;
   color: rgb(91, 91, 91);
 }
-.contact_link:hover{
+
+.contact_link:hover {
   color: rgb(176, 14, 176);
   cursor: pointer;
 }
 
-.link-title{
+.link-title {
   font-weight: 600;
   color: rgb(71, 71, 71);
 }
 
-#location{
+#location {
   /* border: 1px solid red; */
   width: 30%;
 }
-#location_h{
+
+#location_h {
   margin-top: 10%;
 }
-.location_content{
+
+.location_content {
   font-weight: 100px;
-  color:#756e6e;
+  color: #756e6e;
   font-size: 14px;
 }
 
 /* -------------------------------------------------- Footer -------------------------------------------------------------- */
 
-#footer{
+#footer {
   width: 100%;
   height: 60px;
   margin-top: 70px;
   background-color: rgb(238, 170, 238)
-  
 }
-#footer_2{
-  width:90%;
-  margin:auto;
-  display:flex;
+
+#footer_2 {
+  width: 90%;
+  margin: auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   /* border: 1px solid red; */
 }
-#footer_2>div{
+
+#footer_2>div {
   margin-top: 20px;
   /* border: 1px solid green; */
 }
-#footer_2>div svg{
-  fill:rgb(131, 3, 131)
+
+#footer_2>div svg {
+  fill: rgb(131, 3, 131)
 }
-#logo_div2{
-  margin-left:0;
+
+#logo_div2 {
+  margin-left: 0;
 }
 
 
 html::-webkit-scrollbar {
   width: 10px;
   height: 5px;
-  border-radius: 15px 15px 15px 15px; 
+  border-radius: 15px 15px 15px 15px;
 }
 
 html::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgb(43, 160, 151) 60%, rgb(214, 105, 214) 100%);
+  background: linear-gradient(0deg, rgb(43, 160, 151) 60%, rgb(214, 105, 214) 100%);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -908,8 +965,10 @@ html::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 0px 100vh rgb(255, 255, 255);
   border-radius: 5px;
 }
-.vscrollbar
-{
-overflow-x: hidden; /*for hiding horizontal scroll bar*/
-overflow-y: auto; /*for vertical scroll bar*/
+
+.vscrollbar {
+  overflow-x: hidden;
+  /*for hiding horizontal scroll bar*/
+  overflow-y: auto;
+  /*for vertical scroll bar*/
 }
