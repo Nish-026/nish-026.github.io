@@ -403,7 +403,7 @@ input:checked+label svg.moon {
   border-radius: 20px;
   /* margin-top:5%; */
 }
-.home-img>img{
+.home-img{
   width:100%;
   border-radius: 20px;
 }
