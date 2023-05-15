@@ -80,7 +80,7 @@ nav {
 
 #logo {
   margin-bottom: -6px;
-  color: rgb(86, 86, 86);
+  color: rgb(232, 232, 232);
 
 }
 
@@ -440,19 +440,22 @@ input:checked+label svg.moon {
 /* ------------------------------------------ ABOUT ------------------------------------------ */
 
 #about {
-  width: 90%;
+  width: 100%;
   margin: auto;
-  margin-left: 8%;
+  /* margin-left: 8%; */
   margin-top: 60px;
+  background-color: rgb(156, 156, 156);
+  background-image: url("./images/matrix-code-animation-gif-free-animated-background-716.gif");
+  border:1px solid red;
 }
 
 .section_title {
   text-align: center;
-  color: #3a3a3a
+  color: #ffffff
 }
 
 .section_title:hover {
-  color: #3a3a3a;
+  color: #ffffff;
 }
 
 #user-detail-intro {
@@ -474,7 +477,7 @@ input:checked+label svg.moon {
 .about_container>div:nth-child(1) {
   width: 50%;
   padding: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -515,7 +518,7 @@ input:checked+label svg.moon {
 .about_info-title {
   font-size: 18px;
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: white;
 }
 
 .about_info-name {
