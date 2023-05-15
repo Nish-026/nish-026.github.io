@@ -685,7 +685,7 @@ input:checked+label svg.moon {
 }
 
 .project-card-img img {
-  width: 90%;
+  width: 100%;
 }
 
 .project-card-details {
