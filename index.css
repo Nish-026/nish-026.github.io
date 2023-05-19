@@ -239,11 +239,39 @@ input:checked+label svg.moon {
 }
 
 #resume-button-1{
-  color:white;
-  background-color: white;
+  color:rgb(194, 63, 227);
+  background-color: transparent;
   border:none;
+
 }
 
+/* For smartphones */
+@media screen and (min-width: 100px) and (max-width: 480px) {
+
+}
+
+/* For small tablets */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* CSS styles for small tablets */
+
+
+}
+
+/* For larger tablets and smaller laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* CSS styles for larger tablets and smaller laptops */
+
+}
+
+/* For desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* CSS styles for desktop screens */
+}
+
+/* For large screens */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* CSS styles for large screens */
+}
 /* ---------------------------- left-static -----------------------  */
 #left_static_bar {
   width: 2%;
@@ -344,6 +372,7 @@ input:checked+label svg.moon {
 
 .intro_container>div {
   width: 45%;
+  border: 1px solid red;
 }
 
 #intro_text {
@@ -388,7 +417,8 @@ input:checked+label svg.moon {
 #home {
   margin-top: -10px;
   border: 1px solid rgb(255, 255, 255);
-  height: 600px;
+  height: 100vh;
+  border: 1px solid red;
   background: linear-gradient(62deg, #fc8cfc, #23D5AB, #e15ebc, #3ce7a5);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
@@ -438,6 +468,58 @@ input:checked+label svg.moon {
   object-fit: cover;
 }
 
+/* For smartphones */
+@media screen and (min-width: 100px) and (max-width: 480px) {
+
+}
+
+/* For small tablets */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* CSS styles for small tablets */
+
+}
+
+/* For larger tablets and smaller laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* CSS styles for larger tablets and smaller laptops */
+  .container {
+    flex-direction:column-reverse;
+    /* border: 1px solid red; */
+    
+  }
+  .intro_container>div {
+    width: 50%;
+    /* border: 1px solid red; */
+    margin:auto;
+    text-align: center;
+  }
+  .intro_container{
+    margin:auto;
+  }
+  #home_img{
+    width:300px;
+    margin-top: 60px;
+    display:flex;
+    justify-content: center;
+  }
+  .home-img {
+    width:80%;
+  }
+  #intro_connect_btn{
+    width:100%;
+  }
+  
+}
+
+/* For desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* CSS styles for desktop screens */
+}
+
+/* For large screens */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* CSS styles for large screens */
+}
 /* ------------------------------------------ ABOUT ------------------------------------------ */
 
 #about {
