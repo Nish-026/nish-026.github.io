@@ -290,7 +290,7 @@ input:checked+label svg.moon {
 }
 
 #left_static_bar svg:hover {
-  fill: rgb(198, 8, 198);
+  fill: rgb(227, 56, 227);
   transition-duration: 0.5s;
   margin-left: 3px;
   margin-top: 3px;
@@ -298,7 +298,7 @@ input:checked+label svg.moon {
 
 #left_static_bar h5 {
   writing-mode: vertical-rl;
-  color: rgb(131, 3, 131);
+  color: rgb(243, 151, 243);
   /* margin-left: 40px;
   margin-top:  */
 }
@@ -351,7 +351,7 @@ input:checked+label svg.moon {
 #right_static_bar h5,
 #right_static_bar span {
   writing-mode: vertical-rl;
-  color: rgb(249, 151, 249);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -362,7 +362,7 @@ input:checked+label svg.moon {
 }
 
 #right_static_bar span:hover {
-  color: rgb(20, 109, 160);
+  color: rgb(247, 161, 247);
   padding: 5px;
 }
 
