@@ -37,6 +37,8 @@ body{
 
 
 /* ----------------------- Navbar --------------------- */
+
+
 #header {
   display: flex;
   align-items: center;
@@ -144,55 +146,6 @@ nav a {
   display: flex
 }
 
-#Label {
-  width: 68px;
-  height: 25px;
-  position: relative;
-  display: block;
-  background: rgb(49, 186, 175);
-  border-radius: 200px;
-  /* box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4); */
-  cursor: pointer;
-  transition: 0.3s
-}
-
-#Label:after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 2.5px;
-  left: 3px;
-  background: linear-gradient(180deg, #f8faa5, #f9ae53);
-  border-radius: 30px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: 0.3s
-}
-
-#darkmode-Toggle {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-#darkmode-Toggle:checked+#Label {
-  background: #242424;
-}
-
-#darkmode-Toggle:checked+#Label:after {
-  left: 68px;
-  transform: translateX(-100%);
-  background: linear-gradient(180deg, #777, #3a3a3a);
-}
-
-#Label,
-#Label:after {
-  transition: 0.3s
-}
-
-#Label:active:after {
-  width: 50px;
-}
 
 #main {
   background: #ffffff;
@@ -201,9 +154,6 @@ nav a {
   position: absolute;
 }
 
-#darkmode-Toggle:checked+#Label+#main {
-  background-color: #242424;
-}
 
 label svg {
   position: absolute;
@@ -212,31 +162,6 @@ label svg {
   z-index: 100;
 }
 
-label svg.sun {
-  left: 3px;
-  fill: white;
-  transition: 0.3s;
-}
-
-label svg.moon {
-  left: 50px;
-  fill: #7e7e7e;
-  transition: 0.3s;
-}
-
-input:checked+label svg.sun {
-  fill: #7e7e7e;
-}
-
-input:checked+label svg.moon {
-  fill: #fff;
-}
-
-#dark_mode_div {
-  /* border: 1px solid red; */
-  margin-right: 40px;
-  margin-top: -9px;
-}
 
 #resume-button-1{
   color:rgb(194, 63, 227);
@@ -245,22 +170,69 @@ input:checked+label svg.moon {
 
 }
 
+
+#hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+#nav-menu2{
+  display:none;
+}
+
 /* For smartphones */
 @media screen and (min-width: 100px) and (max-width: 480px) {
 
 }
 
 /* For small tablets */
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  /* CSS styles for small tablets */
+@media screen and (max-width: 800px) {
 
+  #header{
+    height:60px;
+  }
+#hamburger-menu {
+    display: block;
+    margin-right:10px;
+}
+
+#nav-menu {
+  display: none;
+}
+#nav-menu2{
+  display:none;
+  margin-top:70px;
+  margin: left 80v;
+  width:80px;
+  height:100vh;
+  border-radius: 10px;
+  position:fixed;
+  background-color: #73a5ae;
+  z-index:9999999;
+
+}
+#nav-menu2 .links ul {
+  display: flex;
+  flex-direction: column;
+}
+#nav-menu2 li{
+  margin-top: 30px;
+}
 
 }
 
 /* For larger tablets and smaller laptops */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* CSS styles for larger tablets and smaller laptops */
-
 }
 
 /* For desktop screens */
@@ -484,6 +456,38 @@ input:checked+label svg.moon {
 /* For small tablets */
 @media screen and (min-width: 480px) and (max-width: 768px) {
   /* CSS styles for small tablets */
+
+  .container {
+    flex-direction:column-reverse;
+    /* border: 1px solid red; */
+    
+  }
+  .intro_container>div {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin:auto;
+    text-align: center;
+  }
+  .intro_container{
+    margin:auto;
+  }
+  #home_img{
+    margin-top: 60px;
+    display:flex;
+    justify-content: center;
+    width: 270px;
+    height: 270px;
+  }
+  .home-img {
+    width:100%;
+    height: 250px;
+  }
+  #intro_connect_btn{
+    margin-left:28%;
+  }
+  #user-detail-name{
+    margin-top:10px;
+  }
 
 }
 
