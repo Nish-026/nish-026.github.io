@@ -703,7 +703,7 @@ label svg {
 /* For smartphones */
 @media screen and (min-width: 100px) and (max-width: 520px) {
   .about_info {
-  grid-template-columns: repeat(2, 30%);
+  grid-template-columns: repeat(1, 30%);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   justify-content: center;
@@ -1413,6 +1413,35 @@ text.ContributionCalendar-label {
   font-size: 14px;
 }
 
+
+
+/* For smartphones */
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  #contact_container{
+    flex-direction: column;
+  }
+}
+
+/* For small tablets */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* CSS styles for small tablets */
+
+}
+
+/* For larger tablets and smaller laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* CSS styles for larger tablets and smaller laptops */
+}
+
+/* For desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* CSS styles for desktop screens */
+}
+
+/* For large screens */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* CSS styles for large screens */
+}
 /* -------------------------------------------------- Footer -------------------------------------------------------------- */
 
 #footer {
