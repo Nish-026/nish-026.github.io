@@ -22,9 +22,6 @@ var typed = new Typed(".auto-type", {
 });
 
 
-// GitHubCalendar(".calendar", "nish-026");
-
-// or enable responsive functionality:
 GitHubCalendar(".calendar", "nish-026", { responsive: true });
 
 
