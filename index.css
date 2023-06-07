@@ -463,9 +463,8 @@ label svg {
     
   }
   .intro_container>div {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
-    /* border: 1px solid red; */
     margin:auto;
     text-align: center;
     
@@ -476,30 +475,30 @@ label svg {
   #home_img{
     display:flex;
     justify-content: center;
-    width: 130px;
-    height: 130px;
-    margin-top: 30px;
+    width: 140px;
+    height: 140px;
+    margin-top: 80px;
     padding:5px;
   }
   .home-img {
-    width:120px;
-    height: 120px;
+    width:130px;
+    height: 130px;
   }
   #intro_connect_btn {
     display: inline-block;
-    width:80%;
+    width:60%;
 }
 #user-detail-name{
-  font-size: 16px;
+  font-size: 22px;
 }
 .home_subtitle{
-  font-size: 14px;
+  font-size: 20px;
 }
 #intro_text{
-  font-size: 12px;
+  font-size: 17px;
 }
 #intro_connect_btn>a{
-  font-size: 14px;
+  font-size: 16px;
 }
 }
 
@@ -562,9 +561,9 @@ label svg {
 
 
 #about h2 {
-  border: 1px solid rgb(82, 82, 82);
+  border: 1px solid rgb(255, 253, 253);
   padding: 10px;
-  width: 42%;
+  width: 300px;
   margin: auto;
   text-align: center;
 }
@@ -626,7 +625,7 @@ label svg {
   display: grid;
   width: 100%;
   margin: auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   grid-template-columns: repeat(5, 15%);
   grid-column-gap: 30px;
   justify-content: center;
@@ -641,7 +640,7 @@ label svg {
 
 .about_info>div:hover {
   transition: 0.4s;
-  border: 1.8px solid rgb(253, 253, 253);
+  /* border: 1.8px solid rgb(253, 253, 253); */
   cursor:pointer;
 }
 
@@ -703,14 +702,14 @@ label svg {
 /* For smartphones */
 @media screen and (min-width: 100px) and (max-width: 520px) {
   .about_info {
-  grid-template-columns: repeat(1, 30%);
+  grid-template-columns: repeat(1, 150px);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   justify-content: center;
   }
   .about_container>div:nth-child(1) {
   background-color: black;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   background-image: none;
   }
   #about_button {
@@ -741,6 +740,14 @@ label svg {
 }
 
 /* -------------------------------------- Skills --------------------------------- */
+
+#skills h2 {
+  border: 1px solid rgb(255, 253, 253);
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
 
 #skills {
   width: 80%;
@@ -800,22 +807,34 @@ label svg {
 @media screen and (min-width: 100px) and (max-width: 480px) {
   #skills{
     width:100%;
-    border:1px solid green;
+    /* border:1px solid green; */
   }
   .skills-wrap {
     border: 1px solid red;
-    width: 100px;
+    width: 180px;
     margin: auto;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(1, 100px);
+    grid-template-columns: repeat(1, 150px);
     color:white;
   }
 }
 
 /* For small tablets */
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  /* CSS styles for small tablets */
+  #skills{
+    width:100%;
+    /* border:1px solid green; */
+  }
+  .skills-wrap {
+    border: 1px solid red;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    color:white;
+  }
 
 }
 
@@ -842,11 +861,12 @@ label svg {
 }
 
 #projects h2 {
-  border: 1px solid rgb(82, 82, 82);
+  border: 1px solid rgb(255, 254, 254);
   padding: 10px;
-  width: 42%;
+  width: 300px;
   margin: auto;
   text-align: center;
+  color:white;
 }
 
 #projects h2:hover {
@@ -859,6 +879,7 @@ label svg {
   display: flex;
   flex-direction: column;
   margin: auto;
+  color: white;
 }
 
 .project-card {
@@ -889,17 +910,22 @@ label svg {
   margin: 5px;
 }
 
-.project-github-link>i,
-.project-deployed-link>i {
-  font-size: x-large;
+.project-github-link>i {
+  color:rgb(228, 69, 226);
+  font-size: 30px;
   margin: 0px 5px;
 }
-
-.project-github-link>i:hover,
+.project-deployed-link>i{
+  border: rgb(228, 69, 226);;
+  font-size: 27px;
+  margin: 0px 5px;
+}
+.project-github-link>i:hover{
+  color: rgb(102, 212, 231);
+}
 .project-deployed-link>i:hover {
   color: rgb(211, 103, 236);
 }
-
 .project-tech-stack>img {
   width: 4%;
 }
@@ -920,7 +946,7 @@ label svg {
   #projects h2 {
     border: 1px solid rgb(82, 82, 82);
     padding: 5px;
-    width: 42%;
+    width: 300px;
     margin: auto;
     text-align: center;
   }
@@ -949,7 +975,7 @@ label svg {
   }
 
   .project-card-img img {
-    width: 90%;
+    width: 100%;
   }
 
   .project-card-details {
