@@ -691,7 +691,7 @@ label svg {
 }
 
 #about_button:hover {
-  background-color: #7df6ec;
+  background-color: #f6ea7d;
 }
 
 #download:hover {
@@ -1415,7 +1415,7 @@ text.ContributionCalendar-label {
 }
 #location svg{
 
-  fill:rgb(147, 221, 220);
+  fill:rgb(252, 255, 90);
 }
 #location_h {
   margin-top: 10%;
@@ -1488,7 +1488,7 @@ text.ContributionCalendar-label {
 }
 
 #logo {
-  margin-left: 0;
+  margin-left: -60px;
   margin-top:-4px;
   /* border:1px solid red; */
 }
