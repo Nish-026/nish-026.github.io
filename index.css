@@ -561,7 +561,7 @@ label svg {
 
 
 #about h2 {
-  border: 1px solid rgb(255, 253, 253);
+  border: 1px solid rgb(82, 82, 82);
   padding: 10px;
   width: 300px;
   margin: auto;
@@ -576,7 +576,6 @@ label svg {
   margin: auto;
   margin-top:50px;
   color:white;
-  border:1px solid red;
 }
 
 .section_title {
@@ -742,7 +741,7 @@ label svg {
 /* -------------------------------------- Skills --------------------------------- */
 
 #skills h2 {
-  border: 1px solid rgb(255, 253, 253);
+  border: 1px solid rgb(82, 82, 82);
   padding: 10px;
   width: 300px;
   margin: auto;
@@ -754,7 +753,6 @@ label svg {
   text-align: center;
   margin: auto;
   margin-top: 70px;
-  border:1px solid red;
   color:white;
 }
 
@@ -810,7 +808,6 @@ label svg {
     /* border:1px solid green; */
   }
   .skills-wrap {
-    border: 1px solid red;
     width: 180px;
     margin: auto;
     margin-top: 30px;
@@ -827,7 +824,6 @@ label svg {
     /* border:1px solid green; */
   }
   .skills-wrap {
-    border: 1px solid red;
     width: 350px;
     margin: auto;
     margin-top: 30px;
@@ -861,7 +857,7 @@ label svg {
 }
 
 #projects h2 {
-  border: 1px solid rgb(255, 254, 254);
+  border: 1px solid rgb(82, 82, 82);
   padding: 10px;
   width: 300px;
   margin: auto;
@@ -1034,39 +1030,17 @@ label svg {
 
 /* ------------------------------------------ Github ------------------------------------------ */
 
-/* .react-activity-calendar {
-  text-align: center;
-  margin-top: 70px;
-}
 
-#git-stat {
-  width: 40%;
-  margin: auto;
-
-}
-
-#git-stat div {
-  width: 100%;
-  margin: auto;
-} */
-
-/* #calendar_div {
-  background-color: rgb(42, 178, 178);
-
-}
-
-.calendar {
-  width: 80%;
-  margin: auto;
-} */
 
 
 .react-activity-calendar {
   text-align: center;
   width: 75%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color:white;
+  /* border: 1px solid red; */
 }
 
 
@@ -1078,6 +1052,7 @@ label svg {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  color:white;
 }
 
 #git-stat > div {
@@ -1128,10 +1103,10 @@ label svg {
 
 
 :root {
-  --color-calendar-graph-day-bg: #dddbdb;
-  --color-calendar-graph-day-L1-bg:  rgb(122, 218, 252);
-  --color-calendar-graph-day-L2-bg: rgb(46, 170, 215);
-  --color-calendar-graph-day-L3-bg: rgb(12, 131, 174);
+  --color-calendar-graph-day-bg: #ffffff;
+  --color-calendar-graph-day-L1-bg:  rgb(211, 122, 252);
+  --color-calendar-graph-day-L2-bg: rgb(212, 28, 185);
+  --color-calendar-graph-day-L3-bg: rgb(179, 7, 179);
   --color-calendar-graph-day-L4-bg: rgb(1, 46, 63);
 }
 
@@ -1263,7 +1238,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 .left.text-muted {
     float: left;
     margin-left: 9px;
-    color: #767676;
+    color: #ffffff;
 }
 .left.text-muted a {
     color: #4078c0;
@@ -1291,7 +1266,7 @@ h2.f4.text-normal.mb-3 {
     z-index: 99999;
     padding: 10px;
     font-size: 12px;
-    color: #959da5;
+    color: #ffffff;
     text-align: center;
     background: rgba(0,0,0,.85);
     border-radius: 3px;
@@ -1319,7 +1294,7 @@ h2.f4.text-normal.mb-3 {
 }
 
 text.ContributionCalendar-label {
-    fill: #ccc;
+    fill: #ffffff;
     font-size: 11px;
 }
 
@@ -1337,12 +1312,22 @@ text.ContributionCalendar-label {
 
 /* ------------------------------------ Contact ------------------------------------------ */
 
+#contact h2{
+  border: 1px solid rgb(82, 82, 82);
+  padding: 5px;
+  width: 42%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+}
 #contact {
   width: 80%;
   margin: auto;
   text-align: center;
   margin-top: 100px;
   /* border: 1px solid red; */
+  color:white;
 }
 
 #contact_container {
@@ -1398,7 +1383,7 @@ text.ContributionCalendar-label {
 .gitlinkedin:hover svg {
   fill: #4dd0f8;
   margin-left: 3px;
-  margin-top: 3px;
+  /* margin-top: 3px; */
   transition: 0.3s;
 }
 
@@ -1411,40 +1396,47 @@ text.ContributionCalendar-label {
 
 .contact_link {
   font-weight: 600;
-  color: rgb(91, 91, 91);
+  color: rgb(255, 255, 255);
 }
 
 .contact_link:hover {
-  color: rgb(176, 14, 176);
+  color: rgb(239, 55, 239);
   cursor: pointer;
 }
 
 .link-title {
   font-weight: 600;
-  color: rgb(71, 71, 71);
+  color: rgb(255, 255, 255);
 }
 
 #location {
   /* border: 1px solid red; */
   width: 30%;
 }
+#location svg{
 
+  fill:rgb(147, 221, 220);
+}
 #location_h {
   margin-top: 10%;
 }
 
 .location_content {
   font-weight: 100px;
-  color: #756e6e;
+  color: #ffffff;
   font-size: 14px;
 }
 
 
 
 /* For smartphones */
-@media screen and (min-width: 100px) and (max-width: 480px) {
+@media screen and (min-width: 100px) and (max-width: 550px) {
   #contact_container{
     flex-direction: column;
+  }
+  #location {
+    /* border: 1px solid red; */
+    width: 100%;
   }
 }
 
@@ -1495,10 +1487,45 @@ text.ContributionCalendar-label {
   fill: rgb(131, 3, 131)
 }
 
-#logo_div2 {
+#logo {
   margin-left: 0;
+  margin-top:-4px;
+  /* border:1px solid red; */
+}
+#footer_N{
+  color:purple
+}
+#logo_div3 h6{
+  margin-top:6px;
+  font-size:18px;
+}
+/* For smartphones */
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  #contact_container{
+    flex-direction: column;
+  }
 }
 
+/* For small tablets */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* CSS styles for small tablets */
+
+}
+
+/* For larger tablets and smaller laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* CSS styles for larger tablets and smaller laptops */
+}
+
+/* For desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* CSS styles for desktop screens */
+}
+
+/* For large screens */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* CSS styles for large screens */
+}
 
 html::-webkit-scrollbar {
   width: 10px;
