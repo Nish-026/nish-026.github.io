@@ -137,6 +137,10 @@ nav a {
   font-size: 18px;
   text-align: center;
 }
+#header.scrolled {
+  background-color: #085a53;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
 
 .fa-moon {
   font-size: 30px;
@@ -1529,7 +1533,7 @@ text.ContributionCalendar-label {
 
 html::-webkit-scrollbar {
   width: 10px;
-  height: 5px;
+  height:5px;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -1542,6 +1546,9 @@ html::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 0px 100vh rgb(255, 255, 255);
   border-radius: 5px;
 }
+/* html::-webkit-scrollbar-button {
+  background-color: red !important
+} */
 
 .vscrollbar {
   overflow-x: hidden;
