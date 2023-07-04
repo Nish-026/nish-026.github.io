@@ -86,13 +86,13 @@ nav {
   border-bottom: 1px solid rgb(255, 255, 255);
   width:150px;
   margin-bottom: -6px;
-  margin-left:20px;
+  /* margin-left:5px; */
   color: rgb(255, 255, 255);
 
 }
 
 #N {
-  color: rgb(204, 111, 204);
+  color: rgb(117, 51, 117);
 }
 
 ul {
@@ -288,13 +288,13 @@ label svg {
 @media screen and (min-width: 100px) and (max-width: 500px) {
   #left_static_bar {
     width: 2%;
-    padding: 10px;
+    padding-left: 10px;
     position: fixed;
-    height: 33rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     z-index: 6;
+    margin-top: 150px;
   }
 
   #left_static_bar i {
@@ -317,7 +317,6 @@ label svg {
 /* -------------------- Right-static -------------------- */
 
 #right_static_bar {
-  /* padding: 10px; */
   right: 10px;
   width: 2%;
   position: fixed;
@@ -325,8 +324,8 @@ label svg {
   display: flex;
   flex-direction: column;
   z-index: 6;
-  /* border: 1px solid rgb(0, 0, 0); */
   margin-top: 150px;
+  margin-right:8px;
 }
 
 #right_static_bar h5,
@@ -334,12 +333,11 @@ label svg {
   writing-mode: vertical-rl;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  /* margin-left:10px; */
 }
 
 #right_static_bar span {
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 18px;
   transition-duration: 0.5s;
 }
 
@@ -348,7 +346,14 @@ label svg {
   padding: 5px;
 }
 
+@media screen and (min-width: 100px) and (max-width: 500px) {
+  #right_static_bar {
+    margin-right:12px;
+  }
 
+
+
+}
 /* ------------------------------------------- Introduction -------------------------------------------- */
 
 
