@@ -69,11 +69,11 @@ nav {
 }
 
 .nav-link {
-  color: rgb(236, 94, 236);
+  color: rgb(231, 185, 231);
 }
 
 .nav-link:hover {
-  color: rgb(182, 72, 182);
+  color: rgb(238, 165, 249);
 }
 
 #logo_div {
@@ -142,7 +142,7 @@ nav a {
   text-align: center;
 }
 #header.scrolled {
-  background-color: #21dcc6;
+  background-color: rgb(75, 164, 147);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
